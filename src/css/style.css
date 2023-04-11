@@ -5,7 +5,125 @@
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration:wavy ;
+    color: var(--violet);
+}
+
+img {
+max-width: 100%;
+}
+
+:root{
+    --gray-blue: hsl(210, 46%, 95%);
+    --light-gray: hsl(0, 0%, 81%);
+    --violet: hsl(263, 55%, 52%);
+    --dark-blue: hsl(217, 19%, 35%);
+    --black-blue: hsl(219, 29%, 14%);
+}
+
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    max-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "card-1 card-1 card-2 card-5"
+    "card-3 card-4 card-4 card-5";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 8%;
+}
+
+.quote{
+    color: var(--light-gray);
+}
+
+.card-1 {
+    grid-area: card-1;
+    border: none;
+    position: relative;
+    background-color: var(--violet);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px -20px;
+}
+
+.quote-img{
+    position: absolute;
+    left: 75%;
+    top: 0;
+    aspect-ratio: 1 / 1;
+}
+
+
+.card-2 {
+    grid-area: card-2;
+    border: none;
+    background-color: var(--dark-blue);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px -20px;
+}
+
+.card-3 {
+    grid-area: card-3;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px -20px;
+}
+
+.card-4 {
+    grid-area: card-4;
+    border: none;
+    background-color: var(--black-blue);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px -20px;
+}
+
+.card-5 {
+    grid-area: card-5;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px -20px;
+}
+
+.profile-pic img{
+    border-radius: 50%
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.profile-wrapper .name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.card-3 .quote, .card-5 .quote{
+    color: var(--dark-blue);
+}
+
+.principal-message {
+    margin: 1.5rem 0;
+}
+
+span{
+    color: var(--light-gray)
 }
 
